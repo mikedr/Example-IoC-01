@@ -12,7 +12,7 @@ public class WalletApp {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 //		Paso 3: Sacar los beans del Spring container
-		Funder funder = context.getBean("myFund",DebitCard.class);
+		Funder funder = context.getBean("myFund", Funder.class);
 		
 		System.out.println(funder.fund());
 		
